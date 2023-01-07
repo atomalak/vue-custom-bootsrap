@@ -1,11 +1,10 @@
 let app;
 
 document.addEventListener("DOMContentLoaded", function () {
-  EventBus = new Vue();
   Vue.component("pagination", {
     props: {
       pageSize: {
-        type: String,
+        type: Number,
       },
     },
     data: function () {
